@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-lg-8 mx-auto">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Serial No.</th>
+          <th scope="col">Model</th>
+          <th scope="col">Manufacturer</th>
+          <th scope="col">Complete Name</th>
+          <th scope="col">Max Power</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let device of deviceData; index as i">
+          <th scope="row">{{i+1}}</th>
+          <td>{{device.model}}</td>
+          <td>{{device.manufacturer}}</td>
+          <td>{{device.completeName}}</td>
+          <td>{{device.maxPowerW}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
